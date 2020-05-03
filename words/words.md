@@ -2,43 +2,43 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Co będzie dalej?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Możliwe ścieżki rozwoju sytuacji COVID-19, objaśnione przy pomocy symulacji
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 30 minut zabawy i czytania
 				&nbsp;&middot;&nbsp;
 			</b>
-			by
+			autorzy:
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
-			&
+			(epidemiolog)
+			oraz
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(kod i oprawa graficzna)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+„Tylko strachu należy się bać” to głupia porada.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Pewnie, nie wykupujcie papieru toaletowego – jednak jeśli prawodawcy boją się strachu, będą udawać, że prawdziwe zagrożenia są niewielkie, aby uniknąć „masowej paniki”. To nie w strachu leży problem, tylko w tym, *jak go kierujemy*. Strach daje nam siłę, żeby stawić czoło zagrożeniom w tej chwili, i żeby przygotować się na niebezpieczeństwo w przyszłości.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Szczerze, my (Marcel, epidemiolog i Nicky, grafika/kod) jesteśmy zaniepokojeni. Pewnie wy także! Z tego powodu użyliśmy siłę naszego strachu do zrobienia tych **grywalnych symulacji**, abyście *wy* mogli użyć siły waszego strachu, żeby zrozumieć:
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **ostatnie kilka miesięcy** (podstawy epidemiologii, model SEIR, R i R<sub>0</sub>)
+* **następne kilka miesięcy** (zakaz wychodzenia, śledzenie kontaktów, maski)
+* **następne kilka lat** (utrata odporności? brak szczepionki?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Niniejszy przewodnik (w angielskim oryginale opublikowany 1go maja 2020. kliknij przypis!→[!data]) ma za zadanie wskrzesić *zarówno* nadzieję, *jak i* strach. Aby pokonać COVID-19 **jednocześnie chroniąc nasze zdrowie psychiczne i możliwości finansowe**, potrzebujemy optymizmu do tworzenia planów i pesymizmu do tworzenia planów zapasowych. Jak kiedyś powiedziała Gladys Bronwyn Stern, *„Optymista wymyśli samolot, a pesymista spadochron”*.
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^data]: Przypisy będą zawierać żródła, odnośniki, albo dodatkowe komentarze. Tak, jak ten komentarz!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Ten przewodnik został opublikowany w oryginalnej wersji angielskiej 1go maja 2020.** Wiele szczegółów kiedyś przestanie być aktualnych, ale jesteśmy pewni, że ten przewodnik obejmie 95% możliwych ścieżek w przyszłość, a podstawy epidemiologii zawsze będą przydatne.
 
-So, buckle in: we're about to experience some turbulence.
+Zapnijcie więc pasy i przygotujcie się na turbulencje.
 
 <div class="section chapter">
     <div>
