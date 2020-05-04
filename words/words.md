@@ -51,13 +51,13 @@ Piloci uczą się na symulatorach lotu, jak nie rozbijać samolotów.
 
 **Epidemiolodzy uczą się na symulatorach epidemii, jak nie rozbić ludzkości.**
 
-Stwórzmy więc bardzo, *bardzo* prosty „symulator lotu epidemii”! W tej symulacji <icon i></icon> Zarażliwi ludzie przekształcają <icon s></icon> Podatnych ludzi w kolejnych <icon i></icon> Zaraźliwych:
+Stwórzmy więc bardzo, *bardzo* prosty „symulator lotu epidemii”! W tej symulacji <icon i></icon> Zaraźliwi ludzie przekształcają <icon s></icon> Podatnych ludzi w kolejnych <icon i></icon> Zaraźliwych:
 
 ![](pics/spread.png)
 
 Szacuje się, że *przy wybuchu* zarazy COVID-19, wirus przeskakuje z <icon i></icon> na <icon s></icon> *przeciętnie* co 4 dni[^serial_interval]. (Nie zapominajcie, że wahania są spore.)
 
-[^serial_interval]: „Przeciętny [szeregowy] okres wynosił 3,96 dni (przedział ufności 95% 3,53–4,39 dni).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Uwaga: wczesne wydania artykułów nie są ich ostatecznymi wersjami.)
+[^serial_interval]: „Przeciętny [szeregowy] okres wynosił 3,96 dni (przedział ufności 95% 3,53–4,39 dni).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L (ang.)](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Uwaga: wczesne wydania artykułów nie są ich ostatecznymi wersjami.)
 
 Co stanie się, jeśli na populacji, gdzie jest tylko 0.001% <icon i></icon>, zasymulujemy „podwojenie co 4 dni” *i nic poza tym*? 
 
@@ -66,9 +66,9 @@ Co stanie się, jeśli na populacji, gdzie jest tylko 0.001% <icon i></icon>, za
 [^caveats]: **Nie zapomnijcie, że wszystkie przedstawione symulacje są super uproszczone w celu dydaktycznym.**
 
     
-    Uproszczenie: gdy zadacie symulacji, żeby „zainfekować jedną nową osobę co X dni”, rzeczywiście zwiększa ona liczbę zainfekowanych o 1/X każdego dnia. Podobnie działają przyszłe ustawienia przedstawionych symulacji – „wyzdrowienie co X dni” to zmniejszenie liczby zainfekowanych o 1/X co dnia.
+    Uproszczenie: gdy zadacie symulacji, żeby „zainfekować jedną nową osobę co X dni”, rzeczywiście zwiększa ona liczbę zainfekowanych o 1/X każdego dnia. Podobnie działają przyszłe ustawienia przedstawionych symulacji – „ozdrowienie co X dni” to zmniejszenie liczby zainfekowanych o 1/X co dnia.
     
-    To *nie jest* dokładnie to samo, ale jest wystarczająco dokładne i bardziej zrozumiałe, niż bezpośrednie ustawianie szybkości zakażeń i wyzdrowień.
+    To *nie jest* dokładnie to samo, ale jest wystarczająco dokładne i bardziej zrozumiałe, niż bezpośrednie ustawianie szybkości zakażeń i ozdrowień.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
@@ -92,13 +92,13 @@ Jak wpływa to na postęp epidemii? Sprawdźmy:
 
 Oto S-kształtny wykres **wzrostu logistycznego**. Zaczyna się powoli, potem wybucha, a w końcu zwalnia.
 
-Ale ta symulacja wciąż jest błędna. Nie wzięliśmy pod uwagę, że <icon i></icon> Zaraźliwi w końcu przestają być zaraźliwi, poprzez 1) wyzdrowienie, 2) „wyzdrowienie” z uszkodzeniami płuc, albo 3) śmierć.
+Ale ta symulacja wciąż jest błędna. Nie wzięliśmy pod uwagę, że <icon i></icon> Zaraźliwi w końcu przestają być zaraźliwi, poprzez 1) ozdrowienie, 2) „ozdrowienie” z uszkodzeniami płuc, albo 3) śmierć.
 
-Dla ułatwienia, załóżmy, że <icon i></icon> Zainfekowany przechodzą w <icon r></icon> Wyzdrowiałych. (Pamiętaj, że w rzeczywistości część z nich będzie martwa.) <icon r></icon> nie dadzą się już więcej zarazić. Przyjmijmy też, – *póki co!* – że są odporni do końca życia.
+Dla ułatwienia, załóżmy, że <icon i></icon> Zainfekowany przechodzą w <icon r></icon> Ozdrowiałych. (Pamiętaj, że w rzeczywistości część z nich będzie martwa.) <icon r></icon> nie dadzą się już więcej zarazić. Przyjmijmy też, – *póki co!* – że są odporni do końca życia.
 
-W przypadku COVID-19, szacuje się, że *przeciętnie*, osoba <icon i></icon> Zaraźliwa zaraża przez 10 dni[^infectiousness]. To oznacza, że niektórzy wyzdrowieją przed upływem 10 dni, a niektórzy po. **Zaczynając z 100% <icon i></icon>, wygląda to tak:**
+W przypadku COVID-19, szacuje się, że *przeciętnie*, osoba <icon i></icon> Zaraźliwa zaraża przez 10 dni[^infectiousness]. To oznacza, że niektórzy ozdrowieją przed upływem 10 dni, a niektórzy po. **Zaczynając od 100% <icon i></icon>, wygląda to tak:**
 
-[^infectiousness]: “Mediana okresu zaraźliwego \[...\] wynosiła 9,5 dnia.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Tak, wiemy, że „mediana” to nie to samo, co „przeciętna”. Ale w celu uproszczenia i edukacji jest wystarczająco podobna.
+[^infectiousness]: “Mediana okresu zaraźliwego \[...\] wynosiła 9,5 dnia.” [Hu, Z., Song, C., Xu, C. et al (ang.)](https://link.springer.com/article/10.1007/s11427-020-1661-4) Tak, wiemy, że „mediana” to nie to samo, co „przeciętna”. Ale w celu uproszczenia i edukacji jest wystarczająco podobna.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
@@ -106,62 +106,63 @@ W przypadku COVID-19, szacuje się, że *przeciętnie*, osoba <icon i></icon> Za
 
 To natomiast przeciwieństwo wzrostu wykładniczego: **tłumienie (gaśnięcie) wykładnicze**.
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Co więc stanie się, jeśli zrobimy symulację wzrostu w kształcie S i *dodamy ozdrowienia*?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Sprawdźmy.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>Czerwony obszar</b> to chorzy *w tej chwili* <icon i></icon>,    
+<b style='color:#999999'>Szary obszar</b> to ozdrowiali <icon r></icon>. Jego górna krawędź to *suma wszystkich zachorowań* (chorzy + ozdrowiali <icon r></icon>).
+Zaczynamy od tylko 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+To właśnie stąd pochodzi ten słynny kształt! Nie jest to rozkład normalny, nawet nie logarytmicznie normalny. Nie ma własnej nazwy. Ale na pewno widzieliście go miliard y razy, i byliście błagani, żeby go spłaszczyć.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+**Model SIR**[^sir]    
+(<icon s></icon>**S**usceptible - podatny, <icon i></icon>**I**nfectious - zarażający, <icon r></icon>**R**ecovered - ozdrowiały)      
+to *druga* co do ważności podstawa epidemiologii:
+101:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Aby zasięgnąć więcej informacji na temat modelu SIR, odwołaj sie do [the Institute for Disease Modeling (ang.)](https://www.idmod.org/docs/hiv/model-sir.html#) oraz [Wikipedii (ang.)](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**UWAGA: Symulacje, którymi wspomagają się ustawodawcy są *o wiele* bardziej zaawansowane, niż te!** Pomimo to, model SIR jest w stanie pokazać nam ogólne zasady, nawet jeśli pomija niuanse.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Dodajmy jednak jeden szczegół: zanim <icon s></icon> zmieni się w <icon i></icon>, niech najpierw stanie się <icon e></icon> Zaatakowanym. Jest zarażony wirusem, ale jeszcze go nie przekazuje – zara*żony*, ale nie zara*źliwy*.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Ten wariant to **model SEIR**[^seir], gdzie „E” pochodzi od „Exposed” i oznacza <icon e></icon> „zaatakowany”. Zwróćmy uwagę, że, inaczej niż mogłoby się wydawać, Zaatakowany nie może się bronić. Zgodnie z tą definicją, Zaatakowany wirusa już ma. Tłumaczenie terminologii jest trudne.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Więcej informacji na temat modelu SEIR można znaleźć w [the Institute for Disease Modeling (ang.)](https://www.idmod.org/docs/hiv/model-seir.html) oraz [na Wikipedii](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Osoby dotknięte COVID-19 pozostają <icon e></icon> *zarażone, ale jeszcze nie zaraźliwe* przeciętnie przez 3 dni.[^latent] Co się stanie, jeśli włączymy to do symulacji?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: „Zakładając rozkład czasu inkubacji ze średnią 5,2 dni wynikającą z odrębnego badania wczesnych przypadków COVID-19, wydedukowaliśmy, że zaraźliwość rozpoczyna się 2,3 dnia (przedział ufności 95%, 0,8–3,0 dni) zanim pojawią się pierwsze oznaki choroby” (w skrócie: jeśli oznaki pojawiają się po 5 dniach, zarażanie rozpoczyna się 2 dni wcześniej = zarażanie zaczyna się po 3 dniach) [He, X., Lau, E.H.Y., Wu, P. et al. (ang.)](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>Obszary Czerwony</b> <b style='color:#FF9393'>i Różowy</b> to razem chorzy w tej chwili (zaraźliwi <icon i></icon> + zaatakowani<icon e></icon>),    
+górna krawędź <b style='color:#888'>Szarego obszaru</b> to *suma wszystkich zachorowań* (chorzy + ozdrowiali <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Niewiele się zmieniło! To, jak długo pozostajemy <icon e></icon> Zaatakowani wpływa na proporcje <icon e></icon> do <icon i></icon>, i na to, *kiedy* mamy największą liczbę chorych... ale *szczytowa liczba* chorych, tak, jak i całkowita liczba zachorowań, nie zmieniają się.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Dlaczego tak się dzieje? To dzięki *najważniejszej* podstawie epidemiologii:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Stopa (współczynnik) Reprodukcji. Odzwierciedla ona *średnią* liczbę ludzi, których <icon i></icon> zarazi *przed* własnym ozdrowieniem (albo śmiercią).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** zmienia się w miarę rozwoju epidemii, w miarę, jak uzyskujemy odporność i przeprowadzamy działania przeciwko epidemii.
 
 **R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
 
