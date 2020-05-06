@@ -131,7 +131,7 @@ to *druga* co do ważności podstawa epidemiologii:
 
 ![](pics/sir.png)
 
-**UWAGA: Symulacje, którymi wspomagają się ustawodawcy są *o wiele* bardziej zaawansowane, niż te!** Pomimo to, model SIR jest w stanie pokazać nam ogólne zasady, nawet jeśli pomija niuanse.
+**UWAGA: Symulacje, na których polegają ustawodawcy, są *o wiele* bardziej zaawansowane, niż te!** Pomimo to, model SIR jest w stanie pokazać nam ogólne zasady, nawet jeśli pomija niuanse.
 
 Dodajmy jednak jeden szczegół: zanim <icon s></icon> zmieni się w <icon i></icon>, niech najpierw stanie się <icon e></icon> Zaatakowanym. Jest zarażony wirusem, ale jeszcze go nie przekazuje – zara*żony*, ale nie zara*źliwy*.
 
@@ -164,53 +164,53 @@ Stopa (współczynnik) Reprodukcji. Odzwierciedla ona *średnią* liczbę ludzi,
 
 **R** zmienia się w miarę rozwoju epidemii, w miarę, jak uzyskujemy odporność i przeprowadzamy działania przeciwko epidemii.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** to wartość, którą R przyjmuje *w chwili rozpoczęcia zarazy, zanim zaczniemy jej przeciwdziałać*. R<sub>0</sub> odzwierciedla dokładniej siłę wirusa samego w sobie, ale też zmienia się w zależności od obszaru. Przykładowo, R<sub>0</sub> jest wyższe w gęściej zasiedlonych miastach, niż w luźniejszych terenach wiejskich.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(Większość artykułów prasowych – a nawet niektóre publikacje naukowe! – mylą ze sobą R i R<sub>0</sub>. Ponownie, terminologia to ciężki orzech do zgryzienia.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> corocznej grypy wynosi około 1.28[^r0_flu]. To oznacza, że *w momencie wybuchu* epidemii grypy, każdy z <icon i></icon> zarazi *średnio* po 1,28 osoby (O ile to może wyglądać dziwnie, że mamy ułamek osoby, to zwróćmy uwagę na to, że „średnio” matki, mają po 2,4 dziecka, a jednak nie widujemy pół-dzieci na ulicach.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: „Mediana R w przypadku grypy sezonowej wyniosła 1,28 (rozstęp ćwiartkowy: 1,19–1,37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al. (ang:)](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+Szacuje się, że R<sub>0</sub> dla COVID-19 to około 2,2,[^r0_covid] chociaż pewne jeszcze *niezakończone* badanie wskazuje na 5,7(!) w Wuhan.[^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: „Szacujemy, że podstawowy współczynnik reprodukcji R0 wynosi około 2,2 (przedział 95% prawdopodobieństwa: 1,4–3,8)” [Riou J, Althaus CL. (ang.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: „obliczyliśmy, że mediana wartość R0 wynosi 5,7 (przedział ufności 95% 3,8–8,9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R. (ang.)](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+W naszych symulacjach – *zarówno przy rozpoczęciu, jak i przeciętnie* – każdy <icon i></icon> zaraża kogoś nowego przez 10 dni, co 4 dni. „10 dni” zawiera dwie i pół porcji „czterech dni”, więc – *zarówno przy rozpoczęciu, jak i przeciętnie* – każdy z naszych <icon i></icon> zaraża po 2,5 osoby. Zatem R<sub>0</sub> = 2,5 (uwagi:[^r0_caveats_sim]).
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: Przy założeniu, że przez cały „okres zaraźliwości” jesteśmy zaraźliwi zawsze w tym samym stopniu. Jest to kolejne uproszczenie w imię zrozumiałości.
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**Sprawdź, jak R<sub>0</sub> zależy od czasu do ozdrowienia i czasu do zarażenia majstrując wartościami w tym kalkulatorze:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Pamiętaj jednak, że im mniej <icon s></icon>, tym *wolniej* <icon s></icon> zmieniają się w <icon i></icon>. Stopa reprodukcji (R) *w tej chwili* zależy nie tylko od *podstawowej* stopy reprodukcji (R<sub>0</sub>), ale *również* od tego, ile ludzi już nie jest <icon s></icon> Podatnych. (Na przykład dlatego, że wyzdrowieli i mają naturalną odporność.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Gdy ludzi odpornych jest wystarczająco wiele, R < 1, a wtedy wirus jest opanowany!Nazywa się to **odpornością stadną**. Odporność stadną od grypy dają nam *szczepionki*. Dawanie się zarazić, żeby osiągnąć „naturalną odporność stadną”, to *okropny* pomysł. (Ale nie z powodu, o którym myślicie! Czytajcie dalej.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+Spójrzmy znów na model modelu SEIR, ale tym razem z widoczną wartością R<sub>0</sub>, chwilową R, oraz progiem odporności stadnej:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**UWAGA: Całkowita ilość zachorowań *nie zatrzymuje się* przy odporności stadnej, ale przekracza ją!** Próg jest przekroczony dokładnie w momencie, gdy mamy maksymalną liczbę obecnie chorych. (Będzie tak nieważne, jak zmienimy ustawienia – spróbujcie!)
 
-This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Jest tak dlatego, że gdy mamy więcej nie-<icon s></icon>, niż wynosi próg odporności stadnej, to otrzymujemy R < 1. A gdy R < 1, to liczba nowych przypadków przestaje rosnąć: maksimum.
 
-**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+**Najważniejsza lekcja, którą powinniście wynieść z tego przewodnika, to ten diagram** – jest bardzo skomplikowany, więc poświęćcie trochę czasu na przyswojenie go:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**Oznacza to: NIE TRZEBA zatrzymać wszystkich zarażeń, ani nawet prawie wszystkich, żeby zatrzymać COVID-19!**
 
 It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
 
