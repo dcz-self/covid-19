@@ -210,33 +210,33 @@ Jest tak dlatego, że gdy mamy więcej nie-<icon s></icon>, niż wynosi próg od
 
 ![](pics/r3.png)
 
-**Oznacza to: NIE TRZEBA zatrzymać wszystkich zarażeń, ani nawet prawie wszystkich, żeby zatrzymać COVID-19!**
+**Oznacza to: NIE TRZEBA całkowicie, ani nawet prawie całkowicie, zatrzymać przechodzenie wirusa z osoby na osobę, żeby powstrzymać COVID-19!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+To paradoks. COVID-19 jest chorobą niezwykle zaraźliwą, a mimo to, aby ją opanować, musimy zatrzymać "tylko" ponad 60% zarażeń. 60%?! Na studiach mogłoby to odpowiadać ocenie dostateczny plus. Ale gdy R<sub>0</sub> = 2,5, to zmniejszenie go o 61% daje nam R = 0.975, czyli R < 1, czyli opanowanego wirusa (dokładny wzór:[^exact_formula])!
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^exact_formula]: Zwróćmy uwagę na to, że R = R<sub>0</sub> · część niewstrzymanych zarażeń ze wszystkich. Pamiętajmy też, że część niewstrzymanych zarażeń = 1 - część *zatrzymanych*.
     
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
+    Zatem, aby uzyskać R < 1, należy najpierw doprowadzić do R<sub>0</sub> · ZarażeniaNiewstrzymane < 1. 
     
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Zatem ZarażeniaNiewstrzymane < 1/R<sub>0</sub>
     
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    Zatem 1 - ZarażeniaZatrzymane < 1/R<sub>0</sub>
     
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    Zatem, ZarażeniaZatrzymane > 1 - 1/R<sub>0</sub>
     
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+    Zatem należy zatrzymać więcej, niż **1 - 1/R<sub>0</sub>** zarażeń, aby uzyskać R < 1 i zatrzymać wirusa!
 
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Jeśli uważacie, że wartości R<sub>0</sub> albo jakiekolwiek inne są w naszych symulacjach zbyt niskie albo wysokie, cieszy nas, że podważacie nasze założenia! Pod koniec przewodnika będzie „tryb piaskownicy”, gdzie można będzie podstawić *własne* liczby i sprawdzić, co z tego wyniknie.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Każdy* sposób przeciwdziałania COVID-19, o którym słyszeliście – mycie rąk, dystansowanie fizyczne, samoizolacja, śledzenie kontaktów i kwarantanny, maski, nawet „odporność stadna” – *wszystko* to sprowadza się do jednego:
 
-Getting R < 1.
+do obniżenia R poniżej 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Użyjmy zatem naszego „symulatora lotu epidemii”, żeby zdobyć odpowiedź na pytanie: jak otrzymać R < 1 na sposób, który **jednocześnie chroni nasze zdrowie psychiczne i możliwości finansowe**?
 
-Brace yourselves for an emergency landing...
+Przygotujcie się na lądowanie awaryjne...
 
 <div class="section chapter">
     <div>
@@ -245,30 +245,29 @@ Brace yourselves for an emergency landing...
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...mogło być gorzej. Udało nam się uniknąć równoległego świata, w którym rozwinął się:
 
-###Scenario 0: Do Absolutely Nothing
+###Scenariusz 0: Nie róbmy zupełnie nic
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Około 1 na 20 osób zarażonych COVID-19 potrzebują pomocy z OIOMu (Ośrodka Intensywnej Opieki Medycznej)[^icu_covid]. W Stanach Zjednoczonych Ameryki, które są krajem bogatym, jedno łóżko na ICU [OIOMie] przypada na 3400 ludzi.[^icu_us] Zatem USA jest w stanie poradzić sobie z 20 zarażonymi osobami *naraz* z każdych 3400 – w przeliczeniu, 0,6% ludności.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: [„Proporcja przypadków COVID-19, które wymagały przyjęcia na ICU [OIOM] w USA od 12 lutego do 16 marca 2020, podział na grupy wiekowe.” (ang.)](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Między 4,9% a 11,5% *wszystkich* przypadków COVID-19 wymagało intensywnej opieki. Wybierając dolną granicę przedziału (co ułatwia zadanie), to 5%, czyli 1 z 20. Należy zwrócić uwagę na to, że ta liczba odpowiada konkretnie rozkładzie wiekowemu USA, oraz będzie większa w krajach o starszej ludności, a mniejsza w krajach o młodszej.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: „Liczba łóżek na ICU [OIOM] = 96596”. Za [the Society of Critical Care Medicine (ang.)](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) liczba ludności USA wyniosła 328 200 000 w roku 2019. 96 596 spośród 328 200 000 = około 1 na 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Nawet, gdyby *ponadpotroić* tą ilość do 2%, to oto, co stałoby się, *jeśli nie zrobilibyśmy zupełnie nic*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Niedobrze.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+To właśnie opisał [raport Imperial College z 16 marca (ang.)](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/): jeśli nie zrobimy nic [w kontekście USA i Wielkiej Brytanii], to przekroczymy możliwości OIOMów, a ponad 80% ludności zostanie zarażona (pamiętajcie, że całkowita ilość zarażeń *przekracza* próg odporności stadnej).
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Nawet jeśli tylko 0,5% zarażonych umiera – wspaniałomyślne założenie, w przypadku, gdy OIOMy są pełne – w większym kraju, jak USA, przy 300 milionach ludzi, 0,5% z 80% z 300 milionów daje 1,2 miliona martwych... *JEŚLI nie zrobilibyśmy nic*.
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(W prasie i mediach społecznościowych często mówi się, że „80% będzie zarażonych”, *nie wspominając* o „JEŚLI NIE ZROBIMY NIC”. Strach został wykorzystany, żeby nabić kliknięcia, a nie zrozumieć sprawę. *Ech.*)
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
