@@ -253,7 +253,7 @@ Około 1 na 20 osób zarażonych COVID-19 potrzebują pomocy z OIOMu (Ośrodka I
 
 [^icu_covid]: [„Proporcja przypadków COVID-19, które wymagały przyjęcia na ICU [OIOM] w USA od 12 lutego do 16 marca 2020, podział na grupy wiekowe.” (ang.)](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Między 4,9% a 11,5% *wszystkich* przypadków COVID-19 wymagało intensywnej opieki. Wybierając dolną granicę przedziału (co ułatwia zadanie), to 5%, czyli 1 z 20. Należy zwrócić uwagę na to, że ta liczba odpowiada konkretnie rozkładzie wiekowemu USA, oraz będzie większa w krajach o starszej ludności, a mniejsza w krajach o młodszej.
 
-[^icu_us]: „Liczba łóżek na ICU [OIOM] = 96596”. Za [the Society of Critical Care Medicine (ang.)](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) liczba ludności USA wyniosła 328 200 000 w roku 2019. 96 596 spośród 328 200 000 = około 1 na 3400. 
+[^icu_us]: „Liczba łóżek na ICU [OIOM] = 96596”. Za [the Society of Critical Care Medicine (ang.)](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) liczba ludności USA wyniosła 328 200 000 w roku 2019. 96 596 spośród 328 200 000 = około 1 na 3400. 
 
 Nawet, gdyby *ponadpotroić* tą ilość do 2%, to oto, co stałoby się, *jeśli nie zrobilibyśmy zupełnie nic*:
 
@@ -269,51 +269,52 @@ Nawet jeśli tylko 0,5% zarażonych umiera – wspaniałomyślne założenie, w 
 
 (W prasie i mediach społecznościowych często mówi się, że „80% będzie zarażonych”, *nie wspominając* o „JEŚLI NIE ZROBIMY NIC”. Strach został wykorzystany, żeby nabić kliknięcia, a nie zrozumieć sprawę. *Ech.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Scenariusz 1: Spowalnianie epidemii / odporność stadna
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Spowalnianie epidemii było strategią wszelkich organizacji zajmujących się opieką zdrowotną, natomiast plan „odporności stadnej” Wielkiej Brytanii spotkał się powszechnie złym odbiorem. Tylko, że to *ta sama strategia*. Wielka Brytania nie potrafiła jednak dobrze przekazać, co robią.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: „Mówi, że cel jest taki sam, jak w innych krajach: spowolnić epidemię przez rozłożenie zarażeń w czasie. W rezultacie, naród mógłby uzyskać odporność stadną; to efekt uboczny, a nie cel. [...] Strategia działań rządu, która jest dostępna w internecie, w ogóle nie wspomina o odporności stadnej.”
     
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    Zaczerpnięte z [artykułu Eda Younga w magazynie The Atlantic (ang.)](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Niestety, obie strategie miały pewną, dosłownie tragiczną, wadę.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Spójrzmy najpierw na dwa główne sposoby na spowolnienie epidemii: mycie rąk oraz zachowanie odstępów.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Częstsze mycie rąk zmniejsza występowanie gryp oraz przeziębień o ok. 25% w krajach o wysokich dochodach[^handwashing], a zakaz wychodzenia z domów w Londynie zmniejsza bliskie kontakty o ok. 70%[^london]. Załóżmy więc, że mycie rąk zmniejsza R o *najwyżej* 25%, a zachowanie odstępów o *najwyżej* 70%:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: „Wszystkie osiem z kwalifikujących się badań stwierdziły, że mycie rąk zmniejszyło ryzyko infekcji dróg oddechowych, przy zmniejszeniu ryzyka od 6% do 44% [wartość ogółem 24% (przedział ufności 95% 6–40%)].” W symulacjach zaokrągliliśmy wartość do 25% w imię prostoty. [Rabie, T. and Curtis, V. (and.)](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Uwaga: jak zauważa ta meta-analiza, jakość badań na temat mycia rąk (przynajmniej w krajach o wysokim dochodzie) pozostawia wiele do życzenia.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: „Zaobserwowaliśmy zmniejszenie średniej liczby dziennych kontaktów każdego uczestnika badania o 73%. Byłoby to wystarczające, aby zmniejszyć R0 z wartości 2,6 przed do 0,62 (0,37 - 0,89) po wprowadzeniem zasad pozostawania w domach.”. W imię prostoty, zaokrągliliśmy to do 70% w tych symulacjach. [Jarvis and Zandvoort et al (ang.)](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Sprawdź za pomocą kalkulatora, jak % nie-<icon s></icon>, mycie rąk oraz pozostawanie w domach wpływa na R:** (ich efekty są przedstawione *względnie*, dzięki czemu zwiększanie jednego parametru wydaje się zmniejszać efekt pozostałych[^log_caveat].)
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Zniekształcenia tego nie byłoby, gdyby R było nakreślone na skali logarytmicznej... ale wtedy musielibyśmy wytłumaczyć, czym jest *skala logarytmiczna*.
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Przeprowadźmy teraz symulację epidemii COVID-19 od marca 2020, zakładając, że zaczęliśmy już częściej myć ręce, ale tylko *trochę* unikamy ludzi – tak, że R spadło, ale wciąż jest powyżej 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Trzy obserwacje:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Całkowita liczba zarażeń *spadła*! **Nawet, jeśli nie osiągniemy R < 1, to zmniejszenie R wciąż może ocalić życie wielu ludziom, poprzez zmniejszenie tego, jak bardzo epidemia przekroczy próg odporności stadnej.** Wielu ludziom wydaje się, że spowolnienie epidemii tylko rozkłada w czasie zarażenia bez zmniejszania ich całkowitej liczby. To byłoby niemożliwe w *żadnym* prostym modelu epidemiologicznym. Ale gdy media mówiły, że „zarażonych będzie ponad 80%”, jakby to było pewne, to było to rozumiane w ten sposób, że całkowita liczba zarażeń jest już niezmienna i wykuta w kamieniu. *Ech*.
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Ze względu na dodatkowe przeciwdziałania, liczba obecnie zarażonych osiąga maksimum *przed* odpornością stadną. W tej symulacji całkowita liczba zarażeń przekracza próg odporności stadnej *tylko trochę* – plan Wielkiej Brytanii! W tym momencie mamy R < 1, możemy dać sobie spokój z przeciwdziałaniem, a COVID-19 pozostaje opanowany! Oprócz jednego drobnego problemu...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Nadal nie starcza nam miejsc na OIOMach. Przez wiele miesięcy (nie zapominajmy, że w symulacji już je potroiliśmy).
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+To było drugie odkrycie raportu Imperial College z 16 marca, dzięki któremu Wielka Brytania porzuciła swój pierwotny plan. Żadne próby **złagodzenia** (zmniejszyć R, ale wciąż R > 1) nie opanują sytuacji. Jedyne wyjście to **stłumienie** (zmniejszyć R poniżej 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Czyli, nie jedynie „spowolnienie”, ale *zduszenie* epidemii. Na przykład poprzez...
+
 
 ###Scenario 2: Months-Long Lockdown
 
