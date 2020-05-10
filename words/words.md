@@ -313,52 +313,52 @@ To było drugie odkrycie raportu Imperial College z 16 marca, dzięki któremu W
 
 ![](pics/mitigation_vs_suppression.png)
 
-Czyli, nie jedynie „spowolnienie”, ale *zduszenie* epidemii. Na przykład poprzez...
+Czyli, nie jedynie „spowolnienie”, ale *zduszenie* epidemii. Na przykład za pomocą...
 
+###Scenariusz 2: Zakaz wychodzenia przez wiele miesięcy
 
-###Scenario 2: Months-Long Lockdown
-
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Zobaczmy, co się stanie, jeśli *zdusimy* epidemię poprzez pięciomiesięczny zakaz, który prawie zlikwiduje <icon i></icon>, a następnie – *w końcu* – powrócimy do normalności:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+Oj.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Widzimy tu „drugą falę”,  o której tyle się mówi. Gdy tylko zniesiemy ograniczenia wychodzenia, wracamy do R > 1. Niedobitki <icon i></icon> (albo importowane <icon i></icon>) mogą spowodować kolejny szczyt epidemii, który ma prawie takie same skutki, jak w scenariuszu 0: nie róbmy zupełnie nic.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Zakaz wychodzenia nie jest wybawieniem, a jedynie rozpoczęciem od nowa.**
 
-So, what, do we just lockdown again & again?
+Czyli co, będziemy wprowadzać zakaz co jakiś czas?
 
-###Scenario 3: Intermittent Lockdown
+###Scenariusz 3: Przerywany zakaz
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Jako pierwszy, rozwiązanie te zaproponował raport Imperial College z 16 marca, a później również publikacja Harvardu.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: „Przy braku innych działań, kluczową miarą powodzenia ograniczenia kontaktów jest to, czy możliwości opieki zdrowotnej nie zostaną przekroczone. Aby tego uniknąć, może powstać potrzeba przedłużonego albo przerywanego ograniczenia kontaktów do roku 2022.”[Kissler and Tedijanto et al (ang.)](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Oto symulacja:** (Gdy rozegracie „nagrany scenariusz”, możecie spróbować *własnego* planu zakazu wychodzenia, przesuwając suwaki *podczas* działania symulacji! Pamiętajcie, że symulację można wstrzymać i kontynuować, a także zmienić jej tempo.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+To *powstrzymałoby* liczbę zachorowań, zanim przekroczyłaby możliwości OIOMów! Do tego jest to *o wiele* lepsze, niż utrzymywanie zakazu przez 18 miesięcy do pojawienia się szczepionki. Musimy jedynie... utrzymać zakaz przez kilka miesięcy, dać luz na kolejne kilka, a potem powtarzać, aż do pojawienia się szczepionki. (A jeśli nie będzie szczepionki, powtarzać, aż wykształci się odporność stadna... w roku 2022.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Dobra, łatwo jest narysować linię oznaczającą „możliwości OIOMów”, ale jest kilka spraw, których tutaj *nie możemy* zasymulować. Takich, jak:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Zdrowie psychiczne**: samotność jest jednym z największych czynników ryzyka dla depresji, zaburzeń lękowych oraz samobójstwa. Do tego, powiązana jest z wcześniejszą śmiercią do tego samego stopnia, co palenie 15 papierosów dziennie.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Zobacz [Ryc. 6 z Holt-Lunstad & Smith 2010 (ang.)](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Oczywiście, wielka uwaga, badanie wykazało *korelację*. Jednakże, o ile nie zaczniemy losowo wybierać ludzi, żeby przez całe życie byli samotni, wiedzę możemy czerpać jedynie z obserwacji.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Zdolności finansowe**: pytanie „a co z gospodarką?” brzmi, jakby pytającemu zależało bardziej na pieniądzach, niż na życiu, ale „gospodarka” to nie tylko inwestycje: to zdolność społeczeństwa do zapewnienia jedzenia i domu dla swoich bliskich, do wykształcenia swoich dzieci, to możliwość korzystania ze sztuki, dobrego jedzenia, gier komputerowych – tych rzeczy, dla których warto żyć. A poza tym, bieda *sama w sobie* ma okropny wpływ na zdrowie zarówno psychiczne, jak i fizyczne.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Nie mówimy też, że *nie powinniśmy* wprowadzić zakazów ponownie! W dalszej części przyjrzymy się zakazom w roli „bezpiecznika”. W każdym razie, nie jest to rozwiądanie idealne.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Chwila... przecież Taiwanowi i Korei Południowej *już udało się* opanować COVID-19, prawda? Całe 4 miesiące, *bez* długotrwałych zakazów?
 
-How?
+Jak?
+
 
 ###Scenario 4: Test, Trace, Isolate
 
