@@ -353,54 +353,53 @@ Dobra, łatwo jest narysować linię oznaczającą „możliwości OIOMów”, a
 
 **Zdolności finansowe**: pytanie „a co z gospodarką?” brzmi, jakby pytającemu zależało bardziej na pieniądzach, niż na życiu, ale „gospodarka” to nie tylko inwestycje: to zdolność społeczeństwa do zapewnienia jedzenia i domu dla swoich bliskich, do wykształcenia swoich dzieci, to możliwość korzystania ze sztuki, dobrego jedzenia, gier komputerowych – tych rzeczy, dla których warto żyć. A poza tym, bieda *sama w sobie* ma okropny wpływ na zdrowie zarówno psychiczne, jak i fizyczne.
 
-Nie mówimy też, że *nie powinniśmy* wprowadzić zakazów ponownie! W dalszej części przyjrzymy się zakazom w roli „bezpiecznika”. W każdym razie, nie jest to rozwiądanie idealne.
+Nie mówimy też, że *nie powinniśmy* wprowadzić zakazów ponownie! W dalszej części przyjrzymy się zakazom w roli „bezpiecznika”. W każdym razie, nie jest to rozwiązanie idealne.
 
-Chwila... przecież Taiwanowi i Korei Południowej *już udało się* opanować COVID-19, prawda? Całe 4 miesiące, *bez* długotrwałych zakazów?
+Chwila... przecież Tajwanowi i Korei Południowej *już udało się* opanować COVID-19, prawda? Całe 4 miesiące, *bez* długotrwałych zakazów?
 
 Jak?
 
+###Scenariusz 4: Testy, śledzenie, izolacja
 
-###Scenario 4: Test, Trace, Isolate
+*„Pewnie, że \*mogliśmy\* zrobić to, co Tajwan i Korea zrobiły od razu, ale już jest za późno. Przegapiliśmy odpowiedni moment.”*
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+Ale właśnie o to chodzi! „Zakaz to nie wybawienie, a rozpoczęcie od nowa”... **a nowy początek to dokładnie to, czego nam trzeba.**
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+Aby zrozumieć, jak Tajwan i Korea Południowa opanowały COVID-19, należy zapoznać się z rozwojem typowego zarażenia COVID-19[^timeline]:
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
-
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **Przeciętnie 3 dni do zaraźliwości**: „Zakładając rozkład czasu inkubacji ze średnią 5,2 dni wynikającą z odrębnego badania wczesnych przypadków COVID-19, wydedukowaliśmy, że zaraźliwość rozpoczyna się 2,3 dnia (przedział ufności 95%, 0,8–3,0 dni) zanim pojawią się pierwsze oznaki choroby” (w skrócie: jeśli oznaki pojawiają się po 5 dniach, zarażanie rozpoczyna się 2 dni wcześniej = zarażanie zaczyna się po 3 dniach) [He, X., Lau, E.H.Y., Wu, P. et al. (ang.)](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **przeciętnie 4 dni do zarażenia kolejnej osoby**: „Przeciętny [szeregowy] okres wynosił 3,96 dni (przedział ufności 95% 3,53–4,39 dni).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L (ang.)](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **średnio 5 dni do wystąpienia objawów**: „przeciętny czas inkubacji szacuje się na 5,1 dnia (przedział ufności 95% od 4,5 do 5,8 dnia)” [Lauer SA, Grantz KH, Bi Q, et al (ang.)](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Jeśli chorzy schowają się w domach dopiero, gdy poczują się źle (czyli gdy odczują objawy), to wirus wciąż może się rozprzestrzeniać:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+W rzeczy samej, 44% zarażeń dzieje się *zanim* zarażający poczuje objawy! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: „Szacujemy, że 44% (przedział ufności 95% 25%–69%) nosicieli wtórnych zostało zarażonych w czasie, gdy nosiciel pierwotny był w stadium przedobjawowym” [He, X., Lau, E.H.Y., Wu, P. et al (ang.)](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Ale jeśli odnajdziemy osoby, które miały niedawno styczność z osobą mającą objawy, oraz zastosujemy wobec nich kwarantannę... zatrzymamy rozprzestrzenianie się wirusa, będąc jeden krok przed nim!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Nazywa się to **śledzeniem kontaktów**. Pomysł nie jest nowy, był już użyty na niespotykaną skalę, aby opanować Ebolę[^ebola], a teraz jest jednym z podstawowych sposobów Tajwanu i Korei Południowej na opanowanie COVID-19!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: „Śledzenie kontaktów było kluczowy działaniem podjętym w Liberii i jednym z najszerzej zakrojonych projektów śledzenia kontaktów podczas epidemii w dziejach.” [Swanson KC, Altare C, Wesseh CS, et al. (ang.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(Pozwala nam również lepiej wykorzystać ograniczoną liczbę zestawów testowych, bo można wtedy znaleźć przedobjawowych <icon i></icon> bez potrzeby sprawdzania prawie wszystkich.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Osoby mające styczność z chorym są zwyczajowo znajdowane poprzez wypytywanie, ale jako jedyny sposób byłoby to zbyt powolne, gdy COVID-19 pozostawia nam tylko ok. 48 godzin. Dlatego osoby przeprowadzające takie wywiady potrzebują pomocy ze strony aplikacji do śledzenia kontaktów – chociaż *nie powinny* ich zastąpić.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Pomysł ten nie wyszedł z głów „komputerowców”: pomysł aplikacji do walki z COVID-19 był pierwszy raz zaproponowany przez [zespół epidemiologów z Oksfordu (ang.)](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Zaraz, aplikacje, które śledzą, z kim mamy styczność?… Czy to nie naruszenie mojej sfery prywatności, wpuszczenie Wielkiego Brata?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+Raczej, że nie! **[DP-3T (ang.)](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, czyli zespół epidemiologów i kryptologów (w tym jeden z nas, Marcel Salathé), *już zajmuje się* tworzeniem aplikacji do śledzenia kontaktów – z kodem dostępnym publicznie – która nie ujawnia **żadnych informacji o waszej tożsamości, waszym położeniu, o osobach, z którymi mieliście styczność, a nawet *ile to było osób***.
 
 Here's how it works:
 
