@@ -401,46 +401,47 @@ Zaraz, aplikacje, które śledzą, z kim mamy styczność?… Czy to nie narusze
 
 Raczej, że nie! **[DP-3T (ang.)](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, czyli zespół epidemiologów i kryptologów (w tym jeden z nas, Marcel Salathé), *już zajmuje się* tworzeniem aplikacji do śledzenia kontaktów – z kodem dostępnym publicznie – która nie ujawnia **żadnych informacji o waszej tożsamości, waszym położeniu, o osobach, z którymi mieliście styczność, a nawet *ile to było osób***.
 
-Here's how it works:
+Działa to w ten sposób:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+([a to pełna wersja komiksu](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Wraz z podobnymi zespołami, jak TCN Protocol[^tcn] i MIT PACT[^pact], przekonali Apple do tego, żeby wbudować śledzenie kontaktów szanujące prywatność bezpośrednio w Androida i iOS.[^gapple] (Nie ufasz Google czy Apple? To w porządku! Piękno tego systemu polega na tym, że *nie wymaga* on zaufania!) Wasze instytucje opieki zdrowotnej mogą wkrótce prosić o ściągnięcie aplikacji. Jeśli szanuje ona prywatność oraz ma upubliczniony kod, wtedy prosimy: zróbcie to!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [Temporary Contact Numbers [Tymczasowe Numery Kontaktowe], zdecentralizowany protokół śledzenia kontaktów, który chroni prywatność (ang.)](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
-[^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
+[^pact]: [Private Automated Contact Tracing [Automatyczne Prywatne Śledzenie Kontaktów] (ang.)](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Apple oraz Google podejmują współdziałanie w kwestii technologii śledzenia kontaktów COVID-19 (ang.)](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Należy zwrócić uwagę, że nie budują *samych aplikacji*, tylko systemy, które je *wesprą*.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+A co z ludźmi bez smartfonów? Z zarażeniami poprzez klamki? Z „rzeczywistymi” przypadkami bezobjawowymi? Aplikacje nie mogą wskazać wszystkich przypadków, kiedy doszło do zarażenia... *ale to nic!* Nie musimy złapać ich *wszystkich*, a tylko ponad 60%, aby otrzymać R < 1.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(Mieszanie przypadków przedobjawowych i „rzeczywiście” bezobjawowych jest męczące. „Prawdziwie” bezobjawowe przypadki zachorowań są rzadkie: [^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: Wiele artykułów dziennikarskich – a nawet naukowych – nie odróżnia chorych którzy „mieli objawy, kiedy ich badano” (przedobjawowych) od tych, którzy „*w ogóle* nigdy nie mieli objawów” (rzeczywiście bezobjawowych). Jedyny sposób, w który można ich odróżnić to wrócić kiedyś do przebadanych.
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Dlatego też zrobiono to w [tym badaniu (ang.)](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article). (Uwaga: wczesne wydania artykułów nie są ich ostatecznymi wersjami.) W telefonicznym centrum obsługi w Korei Południowej, w którym zaobserwowano wybuch COVID-19 „jedynie 4 (1,9%) osób nie miało objawów podczas trwania 14-dniowej kwarantanny, oraz żadna z osób mieszkających z nimi nie została wtórnie zarażona."
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    Oznacza to, że osoby przechodzące chorobę „rzeczywiście bezobjawowo” są rzadko spotykane, a zarażenie się od nich może być jeszcze bardziej niezwykłe!
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+Odizolowanie chorych *z objawami* zmniejszyłoby R o nie więcej, niż 40%, a kwarantanna dla osób, z którymi się zetknęli, a które same *nie mają objawów* zmniejszyłoby R o nie więcej, niż 50%[^oxford]:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: Za badaniem, które wskazało na aplikacje jako sposób walki z COVID-19: [Luca Ferretti & Chris Wymant et al (ang.)](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Zob. Ryc. 2. Zakładając, że R<sub>0</sub> = 2,0, stwierdzono tam, że:    
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * Chorzy z objawami mają udział R = 0,8 (40%)
+    * Chorzy przed objawami mają udział R = 0,9 (45%)
+    * Chorzy bezobjawowi mają udział R = 0,1 (5%, chociaż w modelu badaczy jest duża dawka niepewności, więc wartość może być mniejsza)
+    * Warunki środowiskowe jak klamki odpowiadają za R = 0,2 (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    Suma chorych przedobjawowych oraz bezobjawowych (45% + 5%) daje razem 50% udziału w R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Zatem nawet bez idealnej kwarantanny kontaktów można otrzymać R < 1 *bez zakazów wychodzenia!* To dużo lepsze dla naszego zdrowia psychicznego i finansów. (Jeśli mowa o kosztach, które ponoszą osoby, które się izolują, *rządy powinny ich wesprzeć* – płacić za badania, chronić ich pracę, dopłacać do urlopów chorobowych itd. Będzie to i tak tańsze, niż zakaz przerywany.)
+
 
 We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
 
