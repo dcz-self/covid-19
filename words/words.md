@@ -359,7 +359,7 @@ Chwila... przecież Tajwanowi i Korei Południowej *już udało się* opanować 
 
 Jak?
 
-###Scenariusz 4: Testy, śledzenie, izolacja
+###Scenariusz 4: Badania, śledzenie, izolacja
 
 *„Pewnie, że \*mogliśmy\* zrobić to, co Tajwan i Korea zrobiły od razu, ale już jest za późno. Przegapiliśmy odpowiedni moment.”*
 
@@ -442,57 +442,56 @@ Odizolowanie chorych *z objawami* zmniejszyłoby R o nie więcej, niż 40%, a kw
 
 Zatem nawet bez idealnej kwarantanny kontaktów można otrzymać R < 1 *bez zakazów wychodzenia!* To dużo lepsze dla naszego zdrowia psychicznego i finansów. (Jeśli mowa o kosztach, które ponoszą osoby, które się izolują, *rządy powinny ich wesprzeć* – płacić za badania, chronić ich pracę, dopłacać do urlopów chorobowych itd. Będzie to i tak tańsze, niż zakaz przerywany.)
 
-
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+Potem utrzymujemy R poniżej i aż do chwili, gdy mamy szczepionkę, która przemienia podatnych <icon s></icon> w odpornych <icon r></icon>. Odporność stadna *tak, jak należy*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Uwaga: ten kalkulator zakłada, że szczepionki są stuprocentowo skuteczne. Musimy pamiętać, że w rzeczywistości trzeba zaszczepić *więcej osób*, niż wynosi próg „odporności stadnej”, żeby ją rzeczywiście osiągnąć.)
 
-Okay, enough talk. Here's a simulation of:
+Starczy tego gadania. Oto symulacja, w której mamy:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Kilka miesięcy ograniczeń, po których...
+2. Wprowadzamy badania, śledzenie i izolację, aby móc...
+3. Zaszczepić wystarczająco wiele osób, bo wtedy...
+4. Zwyciężymy.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+I tyle! Tak ląduje się awaryjnie tym samolotem.
 
-That's how we beat COVID-19.
+Tak pokonamy COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+A co, jeśli *mimo wszystko*, coś pójdzie nie tak? Już nieraz zdarzało się, że coś poszło tragicznie. To przemawia strach, ale to dobrze! Strach daje nam siły na zrobienie planów awaryjnych.
 
-The pessimist invents the parachute.
+Pesymista wymyśli spadochron.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###Scenariusz 4+: Maski dla każdego, lato, bezpieczniki
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+Co, jeśli R<sub>0</sub> jest o wiele wyższe, niż oczekiwaliśmy, a powyższe przeciwdziałania, nawet wraz z zachowaniem odstępów, *wciąż* nie daje nam R < 1?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Przypomnijmy sobie, że nawet, jeśli nie osiągniemy R < 1, obniżenie R wciąż zmniejsza „nadwyżkę” chorych po przekroczeniu progu odporności stadnej, więc przekłada się na ocalone życie. Ale R < 1 to wciąż nasz cel, więc mamy jeszcze kilka sposobów na obniżenie R:
 
-**Masks For All:**
+**Maski dla każdego:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*„Zaraz“*, zapytacie, *„przecież maski nie chronią przed zachorowaniem?”*
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+Zgadza się. Maski nie chronią noszących przed zachorowaniem[^incoming]... za to chronią *innych* przed zarażającym noszącym maskę.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: „Żadna z masek chirurgicznych nie wykazała wystarczającej skuteczności filtrowania ani dopasowania do twarzy, aby można było ją uznać za urządzenie chroniące drogi oddechowe” [Tara Oberg & Lisa M. Brosseau (ang.)](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: „3,4-krotny spadek [o 70%] cząstek aerozoli, oraz niemal całkowity zanik większych kropli zaobserwowany przez by Johnson et al. może oznaczać, że maski chirurgiczne noszone przez zarażonych mają znaczący wpływ na zarażanie.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ (ang.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
 [^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+Przekładając to na liczby, maski chirurgiczne *noszone przez chorych* zmniejszają liczbę wirusów grypy i przeziębienia w powietrzu o 70%.[^outgoing] Obniżka zarażeń o 70% byłaby tak samo skuteczna, jak zakazy!
 
 However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
 
