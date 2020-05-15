@@ -493,47 +493,49 @@ Zgadza się. Maski nie chronią noszących przed zachorowaniem[^incoming]... za 
 
 Przekładając to na liczby, maski chirurgiczne *noszone przez chorych* zmniejszają liczbę wirusów grypy i przeziębienia w powietrzu o 70%.[^outgoing] Obniżka zarażeń o 70% byłaby tak samo skuteczna, jak zakazy!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Nie znamy jednak wpływu masek *konkretnie* na COVID-19. Wyniki naukowe powinny być publikowane dopiero, gdy pewność osiąga 95% (...powinny[^replication]). Pierwszego maja 2020 roku maski są „pewne” na mniej niż 95%.
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: Każdy szanujący się naukowiec, który przeczytał ostatnie zdanie pewnie śmieje się teraz przez łzy. Zobacz: [tzw. p-hacking](https://pl.wikipedia.org/wiki/P-hacking), [kryzys replikacji](https://pl.wikipedia.org/wiki/Replikacja_(metoda_naukowa)#Kryzys_replikacji)).
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Ale pandemie są jak poker. **Stawiajcie tylko gdy masz 95% pewności, a przegracie całą stawkę.** Jak zauważa British Medical Journal[^precautionary] w świeżym artykule o maskach, w warunkach niepewności *musimy* stosować analizę kosztów i korzyści. Na przykład tak:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: „Czas zastosować zasadę ostrożności” [Trisha Greenhalgh et al \[PDF\] (ang.)](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Koszty: W przypadku domowych masek z materiału (skutecznych w ok. 2/3 w porównaniu do chirurgicznych[^homemade]), bardzo niewielkie. Przy maskach chirurgicznych, większe, ale wciąż małe.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Korzyści: Nawet jeśli mamy 50% szans zarówno na to, że maski chirurgiczne zmniejszają zarażenia o 0%, jak i o 70%, to średnia „wartość oczekiwana” wynosi 35%, czyli połowa tego, co wprowadzenie zakazów! Załóżmy, że maski chirurgiczne – na oko i po uwzględnieniu niepewności – zmniejszają R o nie więcej niż 35%. (Inne założenia można tu również wypróbować przez przesuwanie suwaków w górę i w dół.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(Więcej argumentów za oraz przeciwko maskom:[^mask_args].)
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
-
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+[^mask_args]: **„Musimy oszczędzać wyposażenie, aby wystarczyło szpitalom** *Pełna zgoda.* Ale to argument bardziej za wzmożeniem produkcji masek, a nie za reglamentacją. W międzyczasie możemy robić je z materiału.
    
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
+   **„Trudno używać ich we właściwy sposób.”** Trudno jest też umyć ręce zgodnie z wytycznymi Światowej Organizacji Zdrowia, a mimo to zalecamy mycie rąk, bo zrobienie czegoś średnio daje lepsze efekty, niż nierobienie w ogóle niczego.
+   
+   **„Przez maski ludzie zaczną lekceważyć mycie rąk i zachowanie odstępów.”** Tak samo, jak przez pasy bezpieczeństwa lekceważone są znaki STOP, a ci, co myją zęby, częściej żują kamienie. Na poważnie, stawiamy na coś przeciwnego: maski *stale przypominają* o byciu ostrożnym – a na wschodzie Azji są symbolem solidarności!
     
     
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+Same tylko maski nie dadzą R < 1. Ale gdy mycie rąk oraz badania, śledzenie i izolacja dają razem R = 1,1, to noszenie masek przez 1/3 wszystkich osób zmniejszyłoby to do R < 1, wirus opanowany!
 
-**Summer:**
+**Lato:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+Dobra, nie jest to „działanie”, które można przeprowadzić, ale też pomoże! Media mówią czasem, że lato nie zmieni nic w sprawie COVID-19. Mają trochę racji: Lato nie da R < 1, ale *i tak* zmniejszy R.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+W przypadku COVID-19, każdy 1°C obniża R o 1,2%[^heat]. Różnica między latem a zimą w Warszawie wynosi ok. 16.8°C,[^nyc_heat], czyli latem R spadnie o ok. 20%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: „Wzrost temperatury o jeden stopień Celsjusza [...] obniża R o 0,0225”, oraz „średnia wartość R pośród tych 100 miast to 1,83”. 0,0225 ÷ 1,83 ≈ 1,2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng (ang.)](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+
+[^nyc_heat]: Miesiące zimowe (grudzień, styczeń, luty) mają średnią temperaturę -1,2°C, a letnie (czerwiec, lipiec, sierpień) ok. 18°C. Dane z lat 1982-2010 z [IMGW](http://pogodynka.pl/polska/daneklimatyczne/).
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Lato samo w sobie nie spowoduje, że R < 1, ale jeśli mamy ograniczone możliwości, możemy osłabić pewne przeciwdziałania na lato, *żeby wzmóc je* zimą.
 
 **A "Circuit Breaker" Lockdown:**
 
