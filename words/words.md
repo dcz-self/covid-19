@@ -537,50 +537,50 @@ W przypadku COVID-19, każdy 1°C obniża R o 1,2%[^heat]. Różnica między lat
 
 Lato samo w sobie nie spowoduje, że R < 1, ale jeśli mamy ograniczone możliwości, możemy osłabić pewne przeciwdziałania na lato, *żeby wzmóc je* zimą.
 
-**A "Circuit Breaker" Lockdown:**
+**Zakazy w roli bezpiecznika**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+Jeśli to *wciąż* nie wystarczy, żeby uzyskać R < 1... możemy ponownie wprowadzić zakazy.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Tym razem nie musiałoby to być na okrągło po 2 miesiące ograniczeń i 1 na luzie! R jest pomniejszone, więc ograniczenia potrzebne są tylko raz albo dwa, żeby odciąć gwałtowny wzrost, zanim pojawi się szczepionka. (Niedawno zrobił tak Singapur, „pomimo”, że przez 4 miesiące panowali nad COVID-19. To nie porażka, *tak buduje się* zwycięstwo.)
 
-Here's a simulation a "lazy case" scenario:
+Oto symulacja „luźnego” scenariusza:
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Zakazy, a następnie
+2. Garstka higieny oraz badań, śledzenia i izolacji, ze szczyptą masek dla wszystkich, po czym...
+3. Jeszcze raz zakaz na odcięcie gwałtownego wzrostu w oczekiwaniu na szczepionkę.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Nie wspominając wszystkich *innych* przeciwdziałań, które możemy podjąć, żeby przyciąć R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Ograniczenia podróży i kwarantanna
+* Badanie temperatury w galeriach handlowych i szkołach
+* Dokładne czyszczenie miejsc publicznych
+* [Stukanie się butami zamiast podawania dłoni (ang.)](https://twitter.com/V_actually/status/1233785527788285953)
+* I wszystko to, co wymyśli geniusz ludzkiego umysłu.
 
 . . .
 
-We hope these plans give you hope. 
+Mamy nadzieję, że te scenariusze dadzą Wam nadzieję. 
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Nawet w pesymistycznym rozwoju wydarzeń *da się* pokonać COVID-19 jednocześnie chroniąc nasze zdrowie psychiczne i zdolności finansowe.** Używanie zakazów jako wyłącznika, utrzymywanie R < 1, izolowanie chorych, śledzenie kontaktów z poszanowaniem prywatności i jeszcze co najmniej maski dla każdego... pozwoli nam mniej-więcej wrócić do normalności!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Pewnie, może wyjdziemy z tego z wysuszonymi dłońmi, ale będzie można wyjść na randkę do księgarni z komiksami! Wyjść do kina na kolejną hollywoodzką drożyznę. Przyglądać się ludziom w bibliotece, cieszyć się z tego, że wszyscy po prostu wiodą swoje normalne *życie*.
 
-Even under the worst-case scenario... life perseveres.
+Życie zwycięża... nawet w najgorszym przypadku.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Przygotujmy więc plan na *gorsze* z najgorszych z przypadków. Lądowanie na wodzie, prosimy nałożyć kamizelki ratunkowe i podążać za światłami do wyjść awaryjnych:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Kilka kolejnych lat</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Zachorujemy na COVID-19, a potem wyzdrowiejemy. Albo dostaniemy szczepionkę. W każdym razie mamy odporność...
 
 ...*for how long?*
 
