@@ -511,7 +511,7 @@ Korzyści: Nawet jeśli mamy 50% szans zarówno na to, że maski chirurgiczne zm
 
 (Więcej argumentów za oraz przeciwko maskom:[^mask_args].)
 
-[^mask_args]: **„Musimy oszczędzać wyposażenie, aby wystarczyło szpitalom** *Pełna zgoda.* Ale to argument bardziej za wzmożeniem produkcji masek, a nie za reglamentacją. W międzyczasie możemy robić je z materiału.
+[^mask_args]: **„Musimy oszczędzać wyposażenie, aby wystarczyło szpitalom”** *Pełna zgoda.* Ale to argument bardziej za wzmożeniem produkcji masek, a nie za reglamentacją. W międzyczasie możemy robić je z materiału.
    
    **„Trudno używać ich we właściwy sposób.”** Trudno jest też umyć ręce zgodnie z wytycznymi Światowej Organizacji Zdrowia, a mimo to zalecamy mycie rąk, bo zrobienie czegoś średnio daje lepsze efekty, niż nierobienie w ogóle niczego.
    
@@ -582,45 +582,45 @@ Przygotujmy więc plan na *gorsze* z najgorszych z przypadków. Lądowanie na wo
 
 Zachorujemy na COVID-19, a potem wyzdrowiejemy. Albo dostaniemy szczepionkę. W każdym razie mamy odporność...
 
-...*for how long?*
+...*na jak długo?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* Najbardziej spokrewnionym wirusem z COVID-19 jest SARS, po którym odporność utrzymuje się 2 lata[^SARS immunity].
+* Po koronawirusach powodujących przeziębienie odporność utrzymuje się przez 8 miesięcy[^cold immunity].
+* Są doniesienia o osobach, które po przejściu COVID-19 znów miały pozytywne wyniki badań, ale nie jest jasne, czy to nie przez niepewność badania[^unclear].
+* Pewne jeszcze *niezrecenzowane* badanie naukowe wykazało, że w małpach odporność na COVID-19 pozostaje przez przynajmniej 28 dni[^monkeys].
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Jeśli chodzi o COVID-19 *u ludzi*, to 1 maja 2020 pytanie o *czas odporności* jest wciąż otwarte.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: „Przeciwciała szczególne dla SARS utrzymywały się średnio przez 2 lata [...] Pacjenci chorzy na SARS mogą być zatem podatni na ponowne zarażenie ≥3 lata po pierwszym zarażeniu.” [Wu LP, Wang NC, Chang YH, et al. (ang.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) „Niestety”, nigdy nie dowiemy się, jak długo rzeczywiście utrzymywałaby się odporność na SARS, bo szybko go unicestwiliśmy.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: „Nie stwierdziliśmy znaczącej różnicy między szansą przynajmniej jednego pozytywnego wyniku, a szansą na powtórkę w przypadku beta-koronawirusów HKU1 i OC43 po 34 tygodniach od rozpoczęcia lub pierwszego zarażenia.” [Marta Galanti & Jeffrey Shaman (PDF) (ang.)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: „Cząstki wirusa utrzymują się jeszcze przez jakiś czas po tym, jak organizm zwalczy wirusa. Nie są zaraźliwe, ale mogą oszukać badania na obecność wirusa.” [from STAT News by Andrew Joseph (ang.)](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Za [Bao et al. (ang.)](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Uwaga: Ten artykuł naukowy jest przeddrukiem i nie został jeszcze zatwierdzony przez recenzję.* Podkreślamy też, że badanie na okoliczność ponownej infekcji przeprowadzono po 28 dniach. 
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+Zasymulujmy 1 rok.
+**Oto symulacja, w której zaczynamy z 100% <span class="nowrap"><icon r></icon>**,</span> wykładniczo gasnących i przeciętnie po 1 roku zmieniających się w podatnych i nieodpornych <span class="nowrap"><icon s></icon></span>:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Powrót gaszenia wykładniczego!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Ten model nazywa się **SEIRS**. Ostatnie „S” to znów „Susceptible”, czyli <icon s></icon> podatny.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Zasymulujmy wybuch epidemii COVID-19 na okresie 10 lat, bez przeciwdziałań, *przy odporności utrzymującej się rok*:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+W poprzednich symulacjach mieliśmy tylko *jeden* szczyt zachorowań, w którym zabrakło miejsc na OIOMach. Teraz mamy ich kilka, a *do tego* osoby <icon i></icon> w końcu *całkiem zapełniają* OIOMy (których moce już *potroiliśmy* dla symulacji).
 
-R = 1, it's **endemic.**
+R = 1, czyli **endemia.**
 
 Thankfully, because summer reduces R, it'll make the situation better:
 
